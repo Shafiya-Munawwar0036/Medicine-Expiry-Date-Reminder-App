@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light cyan background */
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    background-color: #ffffff; /* White background for clarity */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.hidden {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.header button {
+    margin-left: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue background color */
+    color: white;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+input[type="text"], input[type="password"], input[type="date"], button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #007bff; /* Blue border color */
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue background color */
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+.error {
+    color: #dc3545; /* Red color for error messages */
+}
+
+.notification {
+    color: #d32f2f; /* Red color for notifications */
+}
+
+.med-expired {
+    background-color: #ffebee; /* Light red background for expired items */
+    border: 1px solid #dc3545; /* Red border for expired items */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.med-expiring {
+    background-color: #fff3e0; /* Light yellow background for expiring soon items */
+    border: 1px solid #FFEB3B; /* Yellow border for expiring soon items */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.med-other {
+    background-color: #e9f9e9; /* Light green background for other items */
+    border: 1px solid #28a745; /* Green border for other items */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.med-icon {
+    font-size: 20px;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Item details page specific styles */
+#item-details .med-details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6; /* Light border for separation */
+}
+
+.details-info {
+    margin-bottom: 10px;
+}
+
+.details-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+.edit-button, .delete-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #17a2b8; /* Teal color for edit button */
+}
+
+.delete-button {
+    background-color: #dc3545; /* Red color for delete button */
+}
+
+.edit-button:hover {
+    background-color: #138496; /* Darker teal for hover effect */
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* Darker red for hover effect */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #d0e5f5; /* Light blue background color */
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #b0c4de; /* Slightly darker blue border */
+}
+
+.footer p {
+    margin: 0;
+    color: inherit; /* Remove color styling from text */
+}
+
+/* Section Styles */
+.med-expired-section {
+    background-color: #ffebee; /* Light red background */
+    border: 1px solid #dc3545; /* Red border */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.med-expiring-section {
+    background-color: #fff9c4; /* Light yellow background */
+  border: 1px solid #FF8C00; /* Yellow border*/
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.med-expiring-within-6-months {
+    background-color: #ffe0b2; /* Light orange background */
+    border: 1px solid #ffb74d; /* Orange border */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.med-expiring-within-1-year {
+    background-color: #d1c4e9; /* Light purple background */
+    border: 1px solid #ab47bc; /* Purple border */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.med-other-section {
+    background-color: #e9f9e9; /* Light green background */
+    border: 1px solid #28a745; /* Green border */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Heading Styles */
+h2, h3, h4 {
+    text-align: center; /* Center align the headings */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #00008B; /* Blue color for main section headings */
+}
+
+h4 {
+    color: #333; /* Darker color for sub-section headings */
+  text-align: left;
+}

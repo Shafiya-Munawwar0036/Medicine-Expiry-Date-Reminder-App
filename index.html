@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Hospital Peradeniya - Expiry Date Reminder App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+   <!-- Registration Page -->
+    <div id="registration" class="page">
+        <h2>Register</h2>
+        <input type="text" id="reg-username" placeholder="Username">
+        <input type="password" id="reg-password" placeholder="Password">
+        <button onclick="register()">Register</button>
+        <p id="reg-error" class="error"></p>
+        <button onclick="showLogin()">Back to Login</button>
+    </div>
+
+    <!-- Admin Login Page -->
+    <div id="admin-login" class="page hidden">
+        <h2>Admin Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="login-error" class="error"></p>
+        <button onclick="showRegistration()">Register</button>
+        <button onclick="showPasswordReset()">Forgot Password?</button>
+    </div>
+
+    <!-- Password Reset Page -->
+    <div id="password-reset" class="page hidden">
+        <h2>Reset Password</h2>
+        <input type="text" id="reset-username" placeholder="Username">
+        <input type="password" id="new-password" placeholder="New Password">
+        <button onclick="resetPassword()">Reset Password</button>
+        <p id="reset-error" class="error"></p>
+        <button onclick="showLogin()">Back to Login</button>
+    </div>
+
+    <!-- Main Page -->
+    <div id="main-page" class="page hidden">
+        <div class="header">
+            <button onclick="showFAQ()">FAQ</button>
+            <button onclick="shareApp()">Share</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+        <h2>Teaching Hospital Peradeniya <br> Expiry Date Reminder</h2>
+        <input type="text" id="item-name" placeholder="Drug / Inventory Item Name">
+        <input type="date" id="expiry-date">
+        <button onclick="addItem()">Add Drug / Inventory Item</button>
+        <div id="notification" class="notification"></div>
+        <button onclick="viewItemDetails()">View Drug / Inventory Item Details</button>
+    </div>
+
+    <!-- Item Details Page -->
+    <div id="item-details" class="page hidden">
+        <h2>Drug / Inventory Item Details</h2>
+        <div id="item-list"></div>
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <footer class="footer">
+        <p>
+            &copy; Shafiya Munawwar
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
