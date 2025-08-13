@@ -49,3 +49,8 @@ Download the Medicine Expiry Date Reminder App today and streamline your medicat
     <img src="https://img.shields.io/badge/Portfolio-0A66C2?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio"/>
   </a>
 </p>
+
+---
+
+© 2024 Edu Certify | Built with ❤️ using HTML, CSS, JavaScript
+
